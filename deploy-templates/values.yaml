@@ -1,0 +1,22 @@
+name: go-go-beego-postgresql
+namespace: ""
+cdPipelineName: ""
+cdPipelineStageName: ""
+dnsWildcard: eks-delivery.aws.main.edp.projects.epam.com
+framework: beego
+
+
+database:
+  required: true
+  version: postgres:9.6
+  storageClass: gp2
+  capacity: 123Mi
+
+
+
+ingress:
+  required: false
+
+image:
+  name: go-go-beego-postgresql
+  version: latest
